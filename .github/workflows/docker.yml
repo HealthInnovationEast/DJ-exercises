@@ -10,9 +10,9 @@ jobs:
             ports:
               - 5000:5000
         steps:
-            - uses: actions/checkout@v4
-            - name: Build the Docker image
-              run: docker build . --file Dockerfile --tag dj_exercises:latest
+            # - uses: actions/checkout@v4
+            # - name: Build the Docker image
+            #   run: docker build . --file Dockerfile --tag dj_exercises:latest
             - name: Checkout
               uses: actions/checkout@v4
             - name: Set up Docker Buildx
